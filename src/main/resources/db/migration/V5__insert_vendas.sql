@@ -1,0 +1,1 @@
+INSERT INTO vendas (produto_id, quantidade) VALUES (1, 3);
