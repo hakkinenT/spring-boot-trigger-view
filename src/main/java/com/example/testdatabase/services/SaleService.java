@@ -33,8 +33,8 @@ public class SaleService {
         Product product = productRepository.getReferenceById(dto.getProduct().getId());
         sale.setProduct(product);
 
-        sale = saleRepository.saveAndFlush(sale);
-        saleRepository.refresh(sale);
+        sale = saleRepository.saveAndRefresh(sale);
+        //saleRepository.refresh(sale);
 
 
         System.out.println(sale.getValorTotal());
